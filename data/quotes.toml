@@ -1,0 +1,27 @@
+# Add quotes here. Each [[quotes]] block is one carousel slide.
+# Order here = order in the carousel.
+
+[[quotes]]
+text = "The best way to predict the future is to invent it."
+author = "Alan Kay"
+url = "https://en.wikipedia.org/wiki/Alan_Kay"
+
+[[quotes]]
+text = "Talk is cheap. Show me the code."
+author = "Linus Torvalds"
+url = "https://en.wikipedia.org/wiki/Linus_Torvalds"
+
+[[quotes]]
+text = "First, solve the problem. Then, write the code."
+author = "John Johnson"
+url = "https://en.wikipedia.org/wiki/John_Johnson_(businessman)"
+
+[[quotes]]
+text = "Simplicity is the soul of efficiency."
+author = "Austin Freeman"
+url = "https://en.wikipedia.org/wiki/R._Austin_Freeman"
+
+[[quotes]]
+text = "Code is like humor. When you have to explain it, it's bad."
+author = "Cory House"
+url = "https://twitter.com/housecor"

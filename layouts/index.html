@@ -6,18 +6,14 @@
 <section class="quotes">
   <div class="carousel" id="carousel">
     <div class="carousel-track">
-      <div class="carousel-slide active">"The best way to predict the future is to invent it." — <a href="https://en.wikipedia.org/wiki/Alan_Kay" target="_blank" rel="noopener">Alan Kay</a></div>
-      <div class="carousel-slide">"Talk is cheap. Show me the code." — <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener">Linus Torvalds</a></div>
-      <div class="carousel-slide">"First, solve the problem. Then, write the code." — <a href="https://en.wikipedia.org/wiki/John_Johnson_(businessman)" target="_blank" rel="noopener">John Johnson</a></div>
-      <div class="carousel-slide">"Simplicity is the soul of efficiency." — <a href="https://en.wikipedia.org/wiki/R._Austin_Freeman" target="_blank" rel="noopener">Austin Freeman</a></div>
-      <div class="carousel-slide">"Code is like humor. When you have to explain it, it's bad." — <a href="https://twitter.com/housecor" target="_blank" rel="noopener">Cory House</a></div>
+      {{ range $i, $q := .Site.Data.quotes.quotes }}
+      <div class="carousel-slide{{ if eq $i 0 }} active{{ end }}">"{{ $q.text }}" — <a href="{{ $q.url }}" target="_blank" rel="noopener">{{ $q.author }}</a></div>
+      {{ end }}
     </div>
     <div class="carousel-dots" id="carousel-dots">
-      <button class="dot active" aria-label="Quote 1"></button>
-      <button class="dot" aria-label="Quote 2"></button>
-      <button class="dot" aria-label="Quote 3"></button>
-      <button class="dot" aria-label="Quote 4"></button>
-      <button class="dot" aria-label="Quote 5"></button>
+      {{ range $i, $q := .Site.Data.quotes.quotes }}
+      <button class="dot{{ if eq $i 0 }} active{{ end }}" aria-label="Quote {{ add $i 1 }}"></button>
+      {{ end }}
     </div>
   </div>
 </section>
