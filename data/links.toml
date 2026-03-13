@@ -1,0 +1,27 @@
+# Add links here. Each [[links]] block is one card on the home page.
+# Order here = order on the page.
+
+[[links]]
+title = "Example Link 1"
+url = "https://example.com"
+date = "2026-03-10"
+summary = "A short description of what this link is about."
+tags = ["tag 1", "tag 3"]
+
+[[links]]
+title = "Example Link 2"
+url = "https://example.com/another"
+date = "2026-03-11"
+summary = "Another interesting resource worth checking out."
+tags = ["tag 2", "tag 1"]
+
+[[links]]
+title = "Example Link 3"
+url = "https://example.com/third"
+date = "2026-03-12"
+summary = """\
+This is a longer description that spans multiple lines to show how \
+a more detailed summary looks on the page. It provides additional \
+context about the resource, including why it might be useful and \
+what you can expect to find when you follow the link."""
+tags = ["tag 1", "tag 2", "tag 3"]

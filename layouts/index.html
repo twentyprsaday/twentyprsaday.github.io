@@ -1,0 +1,107 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>What is 20 PRs a day worth?</h1>
+</section>
+
+<section class="quotes">
+  <div class="carousel" id="carousel">
+    <div class="carousel-track">
+      <div class="carousel-slide active">"The best way to predict the future is to invent it." — <a href="https://en.wikipedia.org/wiki/Alan_Kay" target="_blank" rel="noopener">Alan Kay</a></div>
+      <div class="carousel-slide">"Talk is cheap. Show me the code." — <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener">Linus Torvalds</a></div>
+      <div class="carousel-slide">"First, solve the problem. Then, write the code." — <a href="https://en.wikipedia.org/wiki/John_Johnson_(businessman)" target="_blank" rel="noopener">John Johnson</a></div>
+      <div class="carousel-slide">"Simplicity is the soul of efficiency." — <a href="https://en.wikipedia.org/wiki/R._Austin_Freeman" target="_blank" rel="noopener">Austin Freeman</a></div>
+      <div class="carousel-slide">"Code is like humor. When you have to explain it, it's bad." — <a href="https://twitter.com/housecor" target="_blank" rel="noopener">Cory House</a></div>
+    </div>
+    <div class="carousel-dots" id="carousel-dots">
+      <button class="dot active" aria-label="Quote 1"></button>
+      <button class="dot" aria-label="Quote 2"></button>
+      <button class="dot" aria-label="Quote 3"></button>
+      <button class="dot" aria-label="Quote 4"></button>
+      <button class="dot" aria-label="Quote 5"></button>
+    </div>
+  </div>
+</section>
+
+<section class="links">
+  {{ range .Site.Data.links.links }}
+  <a href="{{ .url }}" class="link-card" target="_blank" rel="noopener">
+    <div class="link-card-body">
+      <h2 class="link-title">{{ .title }}</h2>
+      <p class="link-date">Added on {{ .date }}</p>
+      <p class="link-summary">{{ .summary }}</p>
+    </div>
+    <div class="link-tags">
+      {{ range .tags }}<button class="tag" data-tag="{{ . }}">{{ . }}</button>{{ end }}
+    </div>
+  </a>
+  {{ end }}
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+(function () {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.dot');
+  let current = 0;
+  let timer;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = index;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  function next() {
+    goTo((current + 1) % slides.length);
+  }
+
+  function startTimer() {
+    timer = setInterval(next, 10000);
+  }
+
+  dots.forEach(function (dot, i) {
+    dot.addEventListener('click', function () {
+      clearInterval(timer);
+      goTo(i);
+      startTimer();
+    });
+  });
+
+  startTimer();
+})();
+
+(function () {
+  var activeTag = null;
+
+  document.querySelector('.links').addEventListener('click', function (e) {
+    var btn = e.target.closest('.tag');
+    if (!btn) return;
+    e.preventDefault();
+    e.stopPropagation();
+
+    var tag = btn.getAttribute('data-tag');
+    var cards = document.querySelectorAll('.link-card');
+
+    if (activeTag === tag) {
+      activeTag = null;
+      cards.forEach(function (c) { c.style.display = ''; });
+      document.querySelectorAll('.tag').forEach(function (t) { t.classList.remove('tag-active'); });
+      return;
+    }
+
+    activeTag = tag;
+    document.querySelectorAll('.tag').forEach(function (t) {
+      t.classList.toggle('tag-active', t.getAttribute('data-tag') === tag);
+    });
+    cards.forEach(function (c) {
+      var tags = c.querySelectorAll('.tag');
+      var match = Array.prototype.some.call(tags, function (t) { return t.getAttribute('data-tag') === tag; });
+      c.style.display = match ? '' : 'none';
+    });
+  });
+})();
+</script>
+{{ end }}
