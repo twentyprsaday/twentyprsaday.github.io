@@ -1,8 +1,7 @@
-image: hugomods/hugo:latest
-
 pages:
+  stage: deploy
   script:
-    - hugo --minify
+    - echo "Deploying pre-built site"
   artifacts:
     paths:
       - public
