@@ -2,26 +2,7 @@
 # Order here = order in the carousel.
 
 [[quotes]]
-text = "The best way to predict the future is to invent it."
-author = "Alan Kay"
-url = "https://en.wikipedia.org/wiki/Alan_Kay"
+text = "AI training on the code magnifies the value of the gift. I am enthusiastic about it!"
+author = "John Carmack"
+url = "https://xcancel.com/ID_AA_Carmack/status/2032460578669691171#m"
 
-[[quotes]]
-text = "Talk is cheap. Show me the code."
-author = "Linus Torvalds"
-url = "https://en.wikipedia.org/wiki/Linus_Torvalds"
-
-[[quotes]]
-text = "First, solve the problem. Then, write the code."
-author = "John Johnson"
-url = "https://en.wikipedia.org/wiki/John_Johnson_(businessman)"
-
-[[quotes]]
-text = "Simplicity is the soul of efficiency."
-author = "Austin Freeman"
-url = "https://en.wikipedia.org/wiki/R._Austin_Freeman"
-
-[[quotes]]
-text = "Code is like humor. When you have to explain it, it's bad."
-author = "Cory House"
-url = "https://twitter.com/housecor"

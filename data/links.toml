@@ -2,26 +2,20 @@
 # Order here = order on the page.
 
 [[links]]
-title = "Example Link 1"
-url = "https://example.com"
-date = "2026-03-10"
-summary = "A short description of what this link is about."
-tags = ["tag 1", "tag 3"]
+title = "Suicide of Jonathan Gavalas"
+url = "https://en.wikipedia.org/wiki/Deaths_linked_to_chatbots#Suicide_of_Jonathan_Gavalas"
+date = "2025-10-02"
+summary = """
+On October 2, 2025, 36-year-old Jonathan Gavalas committed suicide, after extended conversations with Google's Gemini chat app convinced him that "he was executing a covert plan to liberate his sentient AI wife and evade the federal agents pursuing him."
+"""
+tags = ["suicide", "psychosis"]
+
 
 [[links]]
-title = "Example Link 2"
-url = "https://example.com/another"
-date = "2026-03-11"
-summary = "Another interesting resource worth checking out."
-tags = ["tag 2", "tag 1"]
-
-[[links]]
-title = "Example Link 3"
-url = "https://example.com/third"
-date = "2026-03-12"
-summary = """\
-This is a longer description that spans multiple lines to show how \
-a more detailed summary looks on the page. It provides additional \
-context about the resource, including why it might be useful and \
-what you can expect to find when you follow the link."""
-tags = ["tag 1", "tag 2", "tag 3"]
+title = "India’s female workers watching hours of abusive content to train AI"
+url = "https://www.theguardian.com/global-development/2026/feb/05/in-the-end-you-feel-blank-indias-female-workers-watching-hours-of-abusive-content-to-train-ai"
+date = "2026-02-05"
+summary = """
+Women in rural communities describe trauma of moderating violent and pornographic content for global tech companies
+"""
+tags = ["outsourcing", "pornography"]
