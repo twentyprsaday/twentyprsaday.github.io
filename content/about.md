@@ -52,3 +52,4 @@ Claude Code, OpenAI Codex, Cursor, etc.
 # Others
 
 - ["I Am An AI Hater"](https://anthonymoser.github.io/writing/ai/haterdom/2025/08/26/i-am-an-ai-hater.html)
+- [The AI Dirty List](https://aidirtylist.info/)
