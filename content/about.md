@@ -49,3 +49,6 @@ Claude Code, OpenAI Codex, Cursor, etc.
 > off, for productivity gains that aren't even measurable."
 > -- anonymous
 
+# Others
+
+- ["I Am An AI Hater"](https://anthonymoser.github.io/writing/ai/haterdom/2025/08/26/i-am-an-ai-hater.html)
