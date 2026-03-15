@@ -75,37 +75,53 @@ main {
 
 .carousel-track {
   position: relative;
-  min-height: 3rem;
 }
 
 .carousel-slide {
-  position: absolute;
-  inset: 0;
+  display: none;
   opacity: 0;
-  pointer-events: none;
   transition: opacity 0.6s ease;
-  font-style: italic;
-  color: #555;
-  display: flex;
+  text-align: center;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 0.75rem;
 }
 
-.carousel-slide a {
+.carousel-slide.active {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.quote-text {
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.quote-attribution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.quote-attribution a {
   color: #555;
   text-decoration: underline;
   text-decoration-color: #ccc;
   text-underline-offset: 2px;
 }
 
-.carousel-slide a:hover {
+.quote-attribution a:hover {
   color: #2c2c2c;
   text-decoration-color: #2c2c2c;
 }
 
-.carousel-slide.active {
-  opacity: 1;
-  pointer-events: auto;
+.quote-details {
+  font-size: 0.75rem;
+  color: #999;
 }
 
 .carousel-dots {

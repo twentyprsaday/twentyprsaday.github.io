@@ -7,7 +7,13 @@
   <div class="carousel" id="carousel">
     <div class="carousel-track">
       {{ range $i, $q := .Site.Data.quotes.quotes }}
-      <div class="carousel-slide{{ if eq $i 0 }} active{{ end }}">"{{ $q.text }}" — <a href="{{ $q.url }}" target="_blank" rel="noopener">{{ $q.author }}</a></div>
+      <div class="carousel-slide{{ if eq $i 0 }} active{{ end }}">
+        <blockquote class="quote-text">"{{ $q.text }}"</blockquote>
+        <div class="quote-attribution">
+          <a href="{{ $q.url }}" target="_blank" rel="noopener">{{ $q.author }}</a>
+          {{ with $q.details }}<span class="quote-details">{{ . }}</span>{{ end }}
+        </div>
+      </div>
       {{ end }}
     </div>
     <div class="carousel-dots" id="carousel-dots">
