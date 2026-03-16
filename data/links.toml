@@ -2,6 +2,15 @@
 # Order here = order on the page.
 
 [[links]]
+title = "India’s female workers watching hours of abusive content to train AI"
+url = "https://www.theguardian.com/global-development/2026/feb/05/in-the-end-you-feel-blank-indias-female-workers-watching-hours-of-abusive-content-to-train-ai"
+date = "2026-02-05"
+summary = """
+Women in rural communities describe trauma of moderating violent and pornographic content for global tech companies
+"""
+tags = ["outsourcing", "pornography"]
+
+[[links]]
 title = "Suicide of Jonathan Gavalas"
 url = "https://en.wikipedia.org/wiki/Deaths_linked_to_chatbots#Suicide_of_Jonathan_Gavalas"
 date = "2025-10-02"
@@ -12,10 +21,12 @@ tags = ["suicide", "psychosis"]
 
 
 [[links]]
-title = "India’s female workers watching hours of abusive content to train AI"
-url = "https://www.theguardian.com/global-development/2026/feb/05/in-the-end-you-feel-blank-indias-female-workers-watching-hours-of-abusive-content-to-train-ai"
-date = "2026-02-05"
+title = "curl maintainer burning out from slop contributions"
+url = "https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/"
+date = "2025-07-05"
 summary = """
-Women in rural communities describe trauma of moderating violent and pornographic content for global tech companies
+I personally spend an insane amount of time on curl already, wasting three hours still leaves time for other things. My fellows however are not full time on curl. They might only have three hours per week for curl. Not to mention the emotional toll it takes to deal with these mind-numbing stupidities.
 """
-tags = ["outsourcing", "pornography"]
+tags = ["slop", "open source"]
+
+
