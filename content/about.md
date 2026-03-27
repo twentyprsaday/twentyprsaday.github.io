@@ -41,15 +41,19 @@ industry relies on them, both in running and maintaining the
 infrastructure, and as their biggest revenue source in the form of
 Claude Code, OpenAI Codex, Cursor, etc.
 
-# Quotes
+# Quotes and retorts
 
 > "All this, so people like us (referring to software engineers) can do
 > a job that wasn't that hard in the first place, and in reality was
 > actually quite comfortable, for employers who are promising to lay us
 > off, for productivity gains that aren't even measurable."
-> -- anonymous
 
 # Others
 
+You are not alone. There's a growing number of voices out there
+who are not okay with this. Listen to them or add your own voice.
+
 - ["I Am An AI Hater"](https://anthonymoser.github.io/writing/ai/haterdom/2025/08/26/i-am-an-ai-hater.html)
 - [The AI Dirty List](https://aidirtylist.info/)
+- [The Better Offline subreddit](https://old.reddit.com/r/BetterOffline/)
+- [Pivot to AI](https://www.youtube.com/@PivotToAI)
