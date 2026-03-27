@@ -2,6 +2,16 @@
 # Order here = order on the page.
 
 [[links]]
+title = ""
+url = "https://www.theguardian.com/news/2026/mar/26/ai-got-the-blame-for-the-iran-school-bombing-the-truth-is-far-more-worrying"
+date = "2026-03-26"
+summary = """
+American forces killed between 175 and 180 people, most of them girls between the ages of seven and 12.
+Within days, the question that organised the coverage was whether Claude, a chatbot made by Anthropic, had selected the school as a target.
+"""
+tags = ["war"]
+
+[[links]]
 title = "India’s female workers watching hours of abusive content to train AI"
 url = "https://www.theguardian.com/global-development/2026/feb/05/in-the-end-you-feel-blank-indias-female-workers-watching-hours-of-abusive-content-to-train-ai"
 date = "2026-02-05"
