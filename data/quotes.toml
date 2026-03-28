@@ -12,3 +12,9 @@ text = "Personally it’s so much fun. I’ve made several side projects I would
 author = "greenpizza13 on Hacker News"
 details = ""
 url = "https://news.ycombinator.com/item?id=47392416"
+
+[[quotes]]
+text = "This is unambiguously good, useful, and just amazing. I would be very pleased to see this technology become fully commoditized."
+author = "lzon.ca"
+details = ""
+url = "https://lzon.ca/posts/other/thoughts-ai-era/"
