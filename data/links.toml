@@ -2,6 +2,17 @@
 # Order here = order on the page.
 
 [[links]]
+title = "Wikipedia bans AI-generated content in its online encyclopedia"
+url = "https://www.theguardian.com/technology/2026/mar/27/wikipedia-bans-ai"
+date = "2026-03-27"
+summary = """
+In a recent policy change, Wikipedia said that the use of large language models (or LLMs) “often violates” its core principles and will not be allowed.
+...
+The use of AI has been a contentious issue among Wikipedia’s community of volunteer editors but a vote among the site’s editors supported the ban.
+"""
+tags = ["community", "slop"]
+
+[[links]]
 title = "AI got the blame for the Iran school bombing. The truth is far more worrying"
 url = "https://www.theguardian.com/news/2026/mar/26/ai-got-the-blame-for-the-iran-school-bombing-the-truth-is-far-more-worrying"
 date = "2026-03-26"
